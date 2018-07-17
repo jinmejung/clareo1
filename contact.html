@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/module/layout/statelogoff.css">
+    <link rel="stylesheet" href="css/module/layout/statelogon.css">
+    <link rel="stylesheet" href="css/module/layout/searchHeader.css">
+    
+    <link rel="stylesheet" href="css/about.css">
+    
+    <link rel="stylesheet" href="layout/basic/css/common.css">
+    <link rel="stylesheet" href="layout/basic/css/layout.css">
+    
+    <link rel="stylesheet" href="layout/basic/css/ec-base-ui.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-tooltip.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-help.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-product.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-product.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-paginate.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-tab.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-button.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-box.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-desc.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+        
+    <script src="layout/basic/js/basic.js"></script>
+    <script src="js/common.js"></script>
+    
+    <style>
+        .contact {}
+        .contact h2 { font-size: 40px; color: #917a6a; text-transform: uppercase; margin-bottom:30px; font-weight: 600; text-align:center; font-family:'Noto Sans KR',sans-serif; animation:mtxt 1s;}
+        .address {background:#e3ddd8; width:100%; display:inline-block; font-family:'Noto Sans KR', sans-serif; }
+        .address dl {text-align:center; padding:20px 0; border-bottom:1pxs solid #ddd; color:#333; animation:mtxt 1.4s;}
+        .address dl:last-child {border-right:0;}
+        .address dl dt {font-size:14px; font-weight:bold; color:#333;}
+        .address dd {font-size:13px;}
+        .address a {display:block; margin:20px auto 50px;; text-align:center; background:#917a6a; color:#fff; width:200px; padding:10px 0; border-radius:5px;animation:mtxt 1.4s;} 
+        .address a:hover {filter:alpha(opacity=7);opacity:.7;  transition:0.4s ease;}
+        @keyframes mtxt {
+                0% {transform:translateY(50px); opacity:0;}
+                100% {transform:translateY(0); opacity:1;}
+            }
+     </style>
+    
+</head>
+<body>
+     <header>    
+            <div class="top_menu">
+                <div module="Layout_statelogoff" class="txtBase mid-0 xans-layout-statelogoff">
+                    <a href="login.html" class="log">LOGIN</a>
+                    <a href="#">JOIN</a>
+                    <div id="r_search"><a href="#none">SEARCH</a></div>
+                </div>
+
+                <!--오른쪽 상단 검색창-->
+                <div class="search_header" module="Layout_SearchHeader" >
+                    <fieldset>
+                        <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="검색어를 입력하세요." onmousedown="SEARCH_BANNER.clickSearchForm(this)"  type="text" style="height:24px;">
+                        <a href="#none" onclick="{$action_search_submit}" ><i class="fa fa-search" style="font-size:18px;"></i></a></fieldset>
+                </div>
+            </div>
+
+            <div class="logo_wrap">
+                <a href="index.html" style="display:block;"><img src="clareo/img/clareo_logo.png" /></a>
+            </div>
+            <div class="category">
+                <ul class="menu_wrap depth1">
+                    <li>
+                        <a class="a" href="about.html">ABOUT</a>
+                        <!--ul class="depth2">
+                            <li><a class="down" href="/brandstory.html">Brand Story</a></li>
+                            <li><a class="down" href="/contact.html">Contact</a></li>
+                        </ul-->
+                    </li>
+                    <li>
+                        <a class="a" href="contact.html">CONTACT</a>
+                        <!--ul class="depth2">
+                            <li>
+                            <a class="down" href="/watch/list.html?cate_no=52">Watch</a>
+                            <ul class="depth3">
+                            <li><a class="down" href="/watch/list.html?cate_no=29">Men</a></li>
+                            <li><a class="down" href="/watch/list.html?cate_no=30">Women</a></li>
+                            <li><a class="down" href="/watch/list.html?cate_no=31">Couple</a></li>
+                            <li><a class="down" href="/watch/list.html?cate_no=49">Sale</a></li>
+                            </ul>
+                            </li>
+                            <li><a class="down" href="/jewerly/list.html?cate_no=53">Jewerly</a>
+                            <ul class="depth3">
+                            <li><a class="down" href="/jewerly/list.html?cate_no=54">Necklace</a></li>
+                            <li><a class="down" href="/jewerly/list.html?cate_no=55">Bracelet</a></li>
+                            <li><a class="down" href="/jewerly/list.html?cate_no=56">Earring</a></li>
+                            </ul>
+                            </li>
+                            <li><a class="down" href="/product/list.html?cate_no=57">Hair Acc</a></li>
+                         </ul-->
+                    </li>
+                    <li>
+                        <a class="a" href="collection.html">COLLECTION</a>
+                    </li>
+                    <li>
+                        <a class="a" href="shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a class="a" href="#">COMMUNITY</a>
+                        <ul class="depth2">
+                            <li><a class="down" href="https://www.instagram.com/clareo_official/"  target="_blank">Instagram</a></li>
+                            <li><a class="down" href="https://www.facebook.com/%ED%81%B4%EB%9D%BC%EB%A0%88%EC%98%A4-1759348630768136/?modal=admin_todo_tour" target="_blank">Facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+   </header>
+   
+        <div id="wrap">
+            <div id="container">
+                <div id="contents">
+                    <div class="contact">
+                        <h2>Contact</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d35804.14970255891!2d126.99251582813612!3d37.515709358261766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x357ca3f09f76e325%3A0xa76731a716dd91c9!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrhbztmITrj5kg7Jeg67mM65Sp!3m2!1d37.5095428!2d127.0332713!5e0!3m2!1sko!2skr!4v1471845826452" width="100%" height="500" scrolling="no" frameborder="0" style="border:0" allowfullscreen=""></iframe>         
+
+                        <div class="address">
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>서울시 강남구 논현로 626 엠빌딩 7층 (주)트랜드메카</dd>
+                            </dl>
+                            <dl style="border-right:0;">    
+                                <dt>전화 / 팩스</dt>
+                                <dd>1599-8246 / 02-6455-2581</dd>
+                            </dl>
+
+                            <a href="http://naver.me/GUCf6uXX" target="_blank">네이버지도 바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer id="c_footer">
+            <div class="footer-inner">
+                <ul class="information information_w">
+                    <li><a href="/clareo/about.html">회사소개</a></li>
+                    <li><a href="/member/agreement.html">이용약관</a></li>
+                    <li><a href="/member/privacy.html"><strong>개인정보처리방침</strong></a>
+                    </li>
+                    <li>법인명 : (주)트랜드메카</li>
+                    <li>대표자 : 서대규 </li>
+                    <li>통신판매업 신고 : 2016-서울강남02846호</li>
+                    <li>(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</li>
+                    <li>사업자 등록번호 안내 : 113-86-48435 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li> 2018 trendmecca</li>
+                </ul>
+            </div>
+    </footer> 
+    <p id="btntop">
+        <a href="#" style="color:#333;"><i class="material-icons" style="font-size: 30px;">arrow_upward</i></a>
+    </p>
+</body>
+</html>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/scrollreveal.js"></script>
+<script type="text/javascript">
+    window.jQuery1_12_4 = jQuery.noConflict(true);
+    jQuery1_12_4(function($) {
+        var jQuery = $;
+        
+         $(".search_header").css('display','none')
+            $("#r_search a").click(function(){
+                $(".search_header").toggle();
+            });
+        
+        window.sr = ScrollReveal();
+        sr.reveal('.ko_img',{
+            origin: 'bottom',
+            delay:200,
+            duration: 800,
+            scale: 0
+        });
+        sr.reveal('.ko_txt_box',{
+            origin: 'bottom',
+            delay:200,
+            duration: 1000,
+            scale: 0
+        });
+        
+         $(document).scroll(function(){
+            var position_y = $(document).scrollTop();
+
+            if (position_y >= 300){
+                $('#btntop').fadeIn(300);
+            } 
+            if (position_y < 290){
+                $('#btntop').fadeOut(300);
+            }
+        });
+    }(jQuery1_12_4));
+
+</script>

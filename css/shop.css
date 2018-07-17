@@ -1,0 +1,145 @@
+        .shop_wrap{width:100%; height:100%; font-family:'Noto Sans KR',sans-serif;}
+        .shop_title_wrap{}
+        .shop_title{min-height:30px; margin:30px 0 10px; padding-top:10px;}
+        .shop_title h2{
+            display:block;
+            font-size:40px;
+            text-align: center;
+            font-family:'Noto Sans KR',sans-serif;
+            font-weight:500;
+            color:#917a6a;
+            letter-spacing:-1px;
+        }
+        .shop_title_wrap .function{
+            overflow: hidden;
+            text-align: right;
+            line-height:38px;
+        }
+        .function .prd_count{
+            float:left;
+            padding: 0 0 0 8px;
+            color:#aaa;
+            font-weight:normal;
+            font-size:12px;
+            font-family:'Noto Sans KR',sans-serif;
+            letter-spacing:0;
+            text-decoration: none;
+        }
+        .function .prd_count strong{
+            font-weight:500;
+        }
+        .function .type{
+            display:inline;
+            margin: 0 4px 0 0;
+        }
+        .function .type li:first-child{
+            background:none;
+        }
+        .function .type li{
+            display: inline;
+            padding: 0 6px 0 10px;
+            background: url(http://img.echosting.cafe24.com/skin/base_ko_KR/layout/ico_util1.gif) no-repeat 0 50%;
+        }
+        .function .type li a {
+            color:#aaa;
+            font-size:normal;
+            font-family:'Noto Sans KR',sans-serif;
+            letter-spacing:0;
+        }
+        .product_wrap{
+            margin-top:22px;
+        }
+        .product_wrap .prd_list{
+            width:100%;
+            min-width:756px;
+            font-size:0;
+            line-height:0;
+        }
+        .prd_list li{
+            width:25%;
+            position: relative;
+            display: inline-block;
+            margin: 50px 0 20px;
+            color: #757575;
+            vertical-align: top;
+        }
+        .prd_list li .thumbnail{
+            position: relative;
+            margin: 10px 7px;
+            text-align: center;
+        }
+        .prd_list li .thumbnail .prd_img{
+            position:relative;
+        }
+        .prd_list li .thumbnail .prd_img a:hover{
+            filter: alpha(opacity=9);
+            opacity: .9;
+        }
+                
+        .prd_list li .thumbnail .prd_img a img{
+            max-width:100%;
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
+        .prd_list li .thumbnail .description{
+            margin: 0 auto;
+            padding: 0 7px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .prd_list li .thumbnail .description .name{
+            display: block;
+            text-align: center;
+            font-weight: normal;
+            font-size: 12px;
+            color: #555555;
+        }
+        .prd_list li .thumbnail .description .con_price{
+            font-size: 11px;
+            color: #777777;
+            text-decoration: line-through;
+            display:block;
+        }
+        .prd_list li .thumbnail .description .price{
+            font-size: 12px;
+            color: #917a6a;
+            font-weight: bold;
+            display:block;
+        }
+        
+        .shop_wrap .shop_paging{
+            padding: 40px 0 40px;
+            text-align: center;
+        }
+        .shop_wrap .shop_paging p{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .shop_wrap .shop_paging p.first{
+            margin: 0 -4px 0 0;
+        }
+        .shop_wrap .shop_paging p img{
+            vertical-align: top;
+        }
+        .shop_wrap .shop_paging ol{
+            display: inline-block;
+            margin: 0 -4px;
+            font-size: 0;
+            line-height: 0;
+            vertical-align: top;
+        }
+        .shop_wrap .shop_paging ol li{
+            display: inline-block;
+            margin: 0 0 0 -1px;
+            font-size: 12px;
+            color: #757575;
+            vertical-align: top;
+        }
+        .shop_wrap .shop_paging ol li a{
+            display: block;
+            width: 33px;
+            padding: 9px 0;
+            color: #353535;
+            line-height: 14px;
+        }

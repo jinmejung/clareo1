@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+     
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/module/layout/statelogoff.css">
+    <link rel="stylesheet" href="css/module/layout/statelogon.css">
+    <link rel="stylesheet" href="css/module/layout/searchHeader.css">
+    
+    <link rel="stylesheet" href="css/about.css">
+    
+    <link rel="stylesheet" href="layout/basic/css/common.css">
+    <link rel="stylesheet" href="layout/basic/css/layout.css">
+    
+    <link rel="stylesheet" href="layout/basic/css/ec-base-ui.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-tooltip.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-help.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-product.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-product.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-paginate.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-tab.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-button.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-box.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-desc.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    
+    <link rel="stylesheet" href="css/shop.css">
+        
+    <script src="layout/basic/js/basic.js"></script>
+    <script src="js/common.js"></script>
+ 
+</head>
+<body>
+       <header>    
+            <div class="top_menu">
+                <div module="Layout_statelogoff" class="txtBase mid-0 xans-layout-statelogoff">
+                    <a href="login.html" class="log">LOGIN</a>
+                    <a href="#">JOIN</a>
+                    <div id="r_search"><a href="#none">SEARCH</a></div>
+                </div>
+
+                <!--오른쪽 상단 검색창-->
+                <div class="search_header" module="Layout_SearchHeader" >
+                    <fieldset>
+                        <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="검색어를 입력하세요." onmousedown="SEARCH_BANNER.clickSearchForm(this)"  type="text" style="height:24px;">
+                        <a href="#none" onclick="{$action_search_submit}" ><i class="fa fa-search" style="font-size:18px;"></i></a></fieldset>
+                </div>
+            </div>
+
+            <div class="logo_wrap">
+                <a href="index.html" style="display:block;"><img src="clareo/img/clareo_logo.png" /></a>
+            </div>
+            <div class="category">
+                <ul class="menu_wrap depth1">
+                    <li>
+                        <a class="a" href="about.html">ABOUT</a>
+                        <!--ul class="depth2">
+                            <li><a class="down" href="/brandstory.html">Brand Story</a></li>
+                            <li><a class="down" href="/contact.html">Contact</a></li>
+                        </ul-->
+                    </li>
+                    <li>
+                        <a class="a" href="contact.html">CONTACT</a>
+                        <!--ul class="depth2">
+                            <li>
+                            <a class="down" href="/watch/list.html?cate_no=52">Watch</a>
+                            <ul class="depth3">
+                            <li><a class="down" href="/watch/list.html?cate_no=29">Men</a></li>
+                            <li><a class="down" href="/watch/list.html?cate_no=30">Women</a></li>
+                            <li><a class="down" href="/watch/list.html?cate_no=31">Couple</a></li>
+                            <li><a class="down" href="/watch/list.html?cate_no=49">Sale</a></li>
+                            </ul>
+                            </li>
+                            <li><a class="down" href="/jewerly/list.html?cate_no=53">Jewerly</a>
+                            <ul class="depth3">
+                            <li><a class="down" href="/jewerly/list.html?cate_no=54">Necklace</a></li>
+                            <li><a class="down" href="/jewerly/list.html?cate_no=55">Bracelet</a></li>
+                            <li><a class="down" href="/jewerly/list.html?cate_no=56">Earring</a></li>
+                            </ul>
+                            </li>
+                            <li><a class="down" href="/product/list.html?cate_no=57">Hair Acc</a></li>
+                         </ul-->
+                    </li>
+                    <li>
+                        <a class="a" href="collection.html">COLLECTION</a>
+                    </li>
+                    <li>
+                        <a class="a" href="shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a class="a" href="#">COMMUNITY</a>
+                        <ul class="depth2">
+                            <li><a class="down" href="https://www.instagram.com/clareo_official/"  target="_blank">Instagram</a></li>
+                            <li><a class="down" href="https://www.facebook.com/%ED%81%B4%EB%9D%BC%EB%A0%88%EC%98%A4-1759348630768136/?modal=admin_todo_tour" target="_blank">Facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+   </header>
+   <div id="wrap">
+        <div id="container">
+            <div id="contents">
+                <div class="shop_wrap">
+                   <div class="shop_title_wrap">
+                        <div class="shop_title">
+                            <h2>SHOP</h2>
+                        </div>
+                        <div class="function">
+                            <p class="prd_count">ITEM : <strong>12</strong> items</p>
+                            <ul class="type">
+                                <li><a href="#">new</a></li>
+                                <li><a href="#">low price</a></li>
+                                <li><a href="#">high price</a></li>
+                                <li><a href="#">best</a></li>
+                                <li><a href="#">review</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_wrap">
+                        <ul class="prd_list">
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL2802WH.jpg" alt="CL2802WH">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Lune Blanche Round (CL2802WH)</a></strong>
+                                        <span class="con_price">135,000원</span>
+                                        <span class="price">115,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL2802WHR.jpg" alt="CL2802WHR">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Lune Blanche Round (CL2802WHR)</a></strong>
+                                        <span class="con_price">135,000원</span>
+                                        <span class="price">115,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL2802RG.jpg" alt="CL2802RG">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Lune Blanche Round (CL2802RG)</a></strong>
+                                        <span class="con_price">145,000원</span>
+                                        <span class="price">125,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL2801Q_WH.jpg" alt="CL2801Q_WH">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Monetoile Round (CL2801Q_WH)</a></strong>
+                                        <span class="con_price">158,000원</span>
+                                        <span class="price">138,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL2801Q_WHR.jpg" alt="CL2801Q_WHR">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Monetoile Round (CL2801Q_WHR)</a></strong>
+                                        <span class="con_price">158,000원</span>
+                                        <span class="price">138,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL2801Q_RG.jpg" alt="CL2801Q_RG">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Monetoile Round (CL2801Q_RG)</a></strong>
+                                        <span class="con_price">168,000원</span>
+                                        <span class="price">148,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL1802WH.jpg" alt="CL1802WH">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Lune Blanche Flat (CL1802WH)</a></strong>
+                                        <span class="con_price">135,000원</span>
+                                        <span class="price">115,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL1802WHR.jpg" alt="CL1802WHR">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Lune Blanche Flat (CL1802WHR)</a></strong>
+                                        <span class="con_price">135,000원</span>
+                                        <span class="price">115,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL1802RG.jpg" alt="CL1802RG">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Lune Blanche Flat (CL1802RG)</a></strong>
+                                        <span class="con_price">145,000원</span>
+                                        <span class="price">125,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL1801Q_WH.jpg" alt="CL1801Q_WH">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Monetoile Flat (CL1801Q_WH)</a></strong>
+                                        <span class="con_price">158,000원</span>
+                                        <span class="price">138,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL1801Q_WHR.jpg" alt="CL1801Q_WHR">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Monetoile Flat (CL1801Q_WHR)</a></strong>
+                                        <span class="con_price">158,000원</span>
+                                        <span class="price">138,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="prd_img">
+                                        <a href="detail.html">
+                                            <img src="clareo/img/CL1801Q_RG.jpg" alt="CL1801Q_RG">
+                                        </a>
+                                    </div>
+                                    <div class="description">
+                                        <strong class="name"><a href="#">Monetoile Flat (CL1801Q_RG)</a></strong>
+                                        <span class="con_price">168,000원</span>
+                                        <span class="price">148,000원</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shop_paging">
+                        <p class="first"><a href="#"></a><img src="clareo/img/btn_comment_first.gif" alt=""></p>
+                        <p><a href="#"></a><img src="clareo/img/btn_page_prev.gif" alt=""></p>
+                        <ol>
+                            <li><a href="#" class="this">1</a></li>
+                        </ol>
+                        <p><a href="#"><img src="clareo/img/btn_page_next.gif" alt="다음 페이지"></a> </p>
+                        <p class="last"><a href="#"><img src="clareo/img/btn_comment_last.gif" alt="마지막 페이지"></a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="c_footer">
+            <div class="footer-inner">
+                <ul class="information information_w">
+                    <li><a href="/clareo/about.html">회사소개</a></li>
+                    <li><a href="/member/agreement.html">이용약관</a></li>
+                    <li><a href="/member/privacy.html"><strong>개인정보처리방침</strong></a>
+                    </li>
+                    <li>법인명 : (주)트랜드메카</li>
+                    <li>대표자 : 서대규 </li>
+                    <li>통신판매업 신고 : 2016-서울강남02846호</li>
+                    <li>(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</li>
+                    <li>사업자 등록번호 안내 : 113-86-48435 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li> 2018 trendmecca</li>
+                </ul>
+            </div>
+    </footer>
+    <p id="btntop">
+        <a href="#" style="color:#333;"><i class="material-icons" style="font-size: 30px;">arrow_upward</i></a>
+    </p>  
+</body>
+</html>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/scrollreveal.js"></script>
+<script type="text/javascript">
+    window.jQuery1_12_4 = jQuery.noConflict(true);
+    jQuery1_12_4(function($) {
+        var jQuery = $;
+        
+         $(".search_header").css('display','none')
+            $("#r_search a").click(function(){
+                $(".search_header").toggle();
+            });
+         $(document).scroll(function(){
+            var position_y = $(document).scrollTop();
+
+            if (position_y >= 300){
+                $('#btntop').fadeIn(300);
+            } 
+            if (position_y < 290){
+                $('#btntop').fadeOut(300);
+            }
+        });
+       
+    }(jQuery1_12_4));
+
+</script>
+ 
+
+
+

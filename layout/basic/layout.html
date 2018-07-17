@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+
+        <!--PG크로스브라우징필수내용 시작-->
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <!--PG크로스브라우징필수내용 끝-->
+
+        <title>clareo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+        <!--@css(/layout/basic/css/common.css)--><!--해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요.-->
+        <!--@css(/layout/basic/css/layout.css)-->
+        <!--@css(/layout/basic/css/ec-base-ui.css)-->
+        <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+        <!--@css(/layout/basic/css/ec-base-help.css)-->
+        <!--@css(/layout/basic/css/ec-base-product.css)-->
+        <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+        <!--@css(/layout/basic/css/ec-base-tab.css)-->
+        <!--@css(/layout/basic/css/ec-base-button.css)-->
+        <!--@css(/layout/basic/css/ec-base-box.css)-->
+        <!--@css(/layout/basic/css/ec-base-table.css)-->
+        <!--@css(/layout/basic/css/ec-base-desc.css)-->
+
+
+
+        <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+        <!--@js(/layout/basic/js/basic.js)-->
+        <!--@js(/js/common.js)-->
+        <!--@js(/js/module/layout/quick_view.js)-->
+        <script type="text/javascript" src="/ec-js/common.js"></script><!-- 해당 JS는 플래시를 사용하기 위한 스크립트입니다. -->
+    </head>
+
+    
+    <body>
+        <header>    
+            <div class="top_menu">
+                <div module="Layout_statelogoff" class=" txtBase mid-0">
+                    <!--@css(/css/module/layout/statelogoff.css)-->
+                    <a href="/member/login.html" class="log">LOGIN</a>
+                    <a href="/member/join.html">JOIN</a>
+                    <!--a href="">FAQ</a-->
+                    <div id="r_search"><a href="#none">SEARCH</a></div>
+                </div>
+
+
+                <div module="Layout_stateLogon" class=" txtBase mid-0">
+                    <!--@css(/css/module/layout/statelogon.css)-->
+                    <span class="myinfo"><strong>{$name}</strong> <a href="/member/modify.html">MODIFY</a></span>
+                    <a href="{$action_logout}" class="log">LOGOUT</a>
+                    <!--a href="">FAQ</a-->
+                    <div id="r_search"><a href="#none">SEARCH</a></div>
+                </div>
+
+                <!--오른쪽 상단 검색창-->
+                <div class="search_header" module="Layout_SearchHeader" >
+                    <!--@css(/css/module/layout/searchHeader.css)-->
+                    <!--
+$product_page=/product/detail.html
+$category_page=/product/list.html
+-->
+                    <fieldset>
+                        <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="검색어를 입력하세요." type="text" style="height:24px;">
+                        <a href="#none" onclick="{$action_search_submit}" ><i class="fa fa-search" style="font-size:18px;"></i></a></fieldset>
+                    <!--<span class="close_btn"><a href="#none"><img src="/web/frederique/btn_close2.png" alt="" /></a></span>    -->
+                </div>
+            </div>
+
+            <div class="logo_wrap">
+                <a href="/index.html" style="display:block;"><img src="/web/clareo/clareo_logo.png" /></a>
+            </div>
+            <div class="category">
+                <ul class="menu_wrap depth1">
+                    <!--li>
+<a class="a" href="/index.html">HOME</a>
+</li-->
+                    <li>
+                        <a class="a" href="/clareo/about.html">ABOUT</a>
+                        <!--ul class="depth2">
+<li><a class="down" href="/brandstory.html">Brand Story</a></li>
+<li><a class="down" href="/contact.html">Contact</a></li>
+</ul-->
+                    </li>
+                    <li>
+                        <a class="a" href="/clareo/contact.html">CONTACT</a>
+                        <!--ul class="depth2">
+<li>
+<a class="down" href="/watch/list.html?cate_no=52">Watch</a>
+<ul class="depth3">
+<li><a class="down" href="/watch/list.html?cate_no=29">Men</a></li>
+<li><a class="down" href="/watch/list.html?cate_no=30">Women</a></li>
+<li><a class="down" href="/watch/list.html?cate_no=31">Couple</a></li>
+<li><a class="down" href="/watch/list.html?cate_no=49">Sale</a></li>
+</ul>
+</li>
+<li><a class="down" href="/jewerly/list.html?cate_no=53">Jewerly</a>
+<ul class="depth3">
+<li><a class="down" href="/jewerly/list.html?cate_no=54">Necklace</a></li>
+<li><a class="down" href="/jewerly/list.html?cate_no=55">Bracelet</a></li>
+<li><a class="down" href="/jewerly/list.html?cate_no=56">Earring</a></li>
+</ul>
+</li>
+<li><a class="down" href="/product/list.html?cate_no=57">Hair Acc</a></li>
+</ul-->
+                    </li>
+                    <li>
+                        <a class="a" href="/clareo/collection.html">COLLECTION</a>
+                        <!--ul class="depth2">
+<li><a class="down" href="#">산타마리아</a></li>
+<li><a class="down" href="#">마르티</a></li>
+<li><a class="down" href="#">이자벨라</a></li>
+<li><a class="down" href="#">엘도라도</a></li>
+<li><a class="down" href="#">카운티</a></li>
+<li><a class="down" href="#">마르코</a></li>
+<li><a class="down" href="#">댈러스</a></li>
+<li><a class="down" href="#">카나리아</a></li>
+<li><a class="down" href="#">소피아</a></li>
+</ul-->
+                    </li>
+                    <li>
+                        <a class="a" href="/product/list.html?cate_no=43">SHOP</a>
+                        <!--ul class="depth2">
+<li><a class="down" href="#">컨셉샷</a></li>
+<li><a class="down" href="#">연예인착용샷</a></li>
+</ul-->
+                    </li>
+                    <li>
+                        <a class="a" href="/blog.html">SNS</a>
+                        <ul class="depth2">
+                            <li><a class="down" href="/blog.html" >Blog</a></li>
+                            <li><a class="down" href="" target="_blank">Instagram</a></li>
+                            <li><a class="down" href="https://www.facebook.com/%ED%81%B4%EB%9D%BC%EB%A0%88%EC%98%A4-1759348630768136/?modal=admin_todo_tour" target="_blank">Facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="wrap">
+            <div id="container">
+                <div id="contents">
+                    <!--@contents-->
+                </div>
+            </div>
+        </div>
+
+        <footer id="c_footer">
+            <div class="footer-inner">
+                <ul class="information information_w">
+                    <li><a href="/clareo/about.html">회사소개</a></li>
+                    <li><a href="/member/agreement.html">이용약관</a></li>
+                    <li><a href="/member/privacy.html"><strong>개인정보처리방침</strong></a>
+                    </li>
+                    <li>법인명 : (주)트랜드메카</li>
+                    <li>대표자 : 서대규 </li>
+                    <li>통신판매업 신고 : 2016-서울강남02846호</li>
+                    <li>(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</li>
+                    <li>사업자 등록번호 안내 : 113-86-48435 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li> 2018 trendmecca</li>
+                </ul>
+            </div>
+        </footer>
+        <p id="btntop">
+            <a href="#" style="color:#333;"><i class="material-icons" style="font-size: 30px;">arrow_upward</i></a>
+        </p>
+
+        <!-- 참고: 결제를 위한 필수 영역 -->
+        <div id="progressPaybar" style="display:none;">
+            <div id="progressPaybarBackground" class="layerProgress"></div>
+            <div id="progressPaybarView">
+                <div class="box">
+                    <p class="graph">
+                        <span><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/txt_progress.gif" alt="현재 결제가 진행중입니다." /></span>
+                        <span><img src="//img.echosting.cafe24.com/skin/base/layout/img_loading.gif" alt="" /></span>
+                    </p>
+                    <p class="txt">
+                        본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을 닫으시면<br />
+                        주문이 되지 않으니 결제 완료 될 때 까지 닫지 마시기 바랍니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- //참고 -->
+
+
+
+        <div module="Layout_conversionPc">
+            <!--@css(/css/module/layout/conversionpc.css)-->
+            <a href="{$mobile_url}">모바일 화면보기</a>
+        </div>
+    </body>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+        window.jQuery1_11_1 = jQuery.noConflict(true);
+
+        $(document).ready(function(){
+            $(".search_header").css('display','none')
+            $("#r_search a").click(function(){
+                $(".search_header").toggle();
+            });
+        });
+    </script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    window.jQuery1_12_4 = jQuery.noConflict(true);
+</script>
+
+<script type="text/javascript">
+    (function($) {
+        var jQuery = $;
+        $(document).scroll(function(){
+            var position_y = $(document).scrollTop();
+
+            if (position_y >= 300){
+                $('#btntop').fadeIn(300);
+            } 
+            if (position_y < 290){
+                $('#btntop').fadeOut(300);
+            }
+        });
+    }(jQuery1_12_4));		
+</script>
+</html>

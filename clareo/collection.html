@@ -1,0 +1,165 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@js(/js/swiper.min.js)-->
+<!--@js(/clareo/collection_swiper.js)-->
+<!--@css(/css/swiper.min.css)-->
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
+    @import url(https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+    #wrap, #container, #contents{width:100%; margin:0 auto;height:100%;}
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    .fa-search{color:#fff;}
+    header{position:absolute;}
+    #c_footer{position:absolute;}
+
+    #collection_wrap{
+        width:100%;
+        height:100%;
+        overflow: hidden;
+        font-family:'Noto Sans KR','nanumgothic', sans-serif;
+        margin: 0;
+        padding: 0;
+        min-width:1200px;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide.monetoile{
+        background: url('/web/clareo/collection_visual_01.jpg') no-repeat top center;
+        background-size:cover;
+    }
+    .swiper-slide.lune_blanche{
+        background:url('/web/clareo/collection_visual_02.jpg') no-repeat top center;
+        background-size:cover;
+    }
+    .swiper-button-prev {
+        left: 20px;
+        background-image: url(/web/clareo/visual_left_arrow.png);
+    }
+
+    .swiper-button-next {
+        right: 20px;
+        background-image: url(/web/clareo/visual_right_arrow.png);
+    }
+    .swiper-button-prev:hover{
+        filter:alpha(opacity=7);opacity:.7; 
+    }
+    .swiper-button-next:hover{
+        filter:alpha(opacity=7);opacity:.7;  
+    }
+    .contents_box{
+        position:absolute;
+        right:12%;
+        top:50%;
+        transform:translateY(-50%)
+    }
+    .contents_box .txt_box h2{
+        font-family: 'Playfair Display', serif;
+        font-size:90px;
+        font-weight:300;
+        letter-spacing:-2.5px;
+        color:#3c2819;
+    }
+    .contents_box .txt_box span{
+        display: block;
+        font-size:18px;
+        font-family: 'Noto Sans KR',sans-serif;
+        font-weight:300;
+        color:#3c2819;
+    }
+    .product_box{
+        width: 460px;
+        margin: 100px auto;
+    }
+    .product_list li{
+        float:left;
+        margin-right:50px;
+    }
+    .product_list li:last-child{
+        margin-right:0;
+    }
+    .product_list li a{
+        display: block;
+    }
+    .product_list li a:hover{
+        filter:alpha(opacity=9);opacity:.9;
+    }
+    .product_list li a img{
+        width:120px;
+    }
+    .product_list li a span{
+        display: block;
+        font-size:12px;
+        font-family: 'Noto Sans KR',sans-serif;
+        color:#3c2819;
+        margin-top:10px;
+    }
+</style>
+<!-- Swiper -->
+<div id="collection_wrap">
+    <div class="collection_visual swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide monetoile">
+                <div class="contents_box">
+                    <div class="txt_box">
+                        <h2>Monetoile</h2>
+                        <span>어두운 밤 당신을 비춰주는 소중한 작은 별빛처럼</span>
+                    </div>
+                    <div class="product_box">
+                        <ul class="product_list">
+                            <li><a href="/product/monetoile-round-cl2801qwh/71/category/43/display/1/"><img src="/web/clareo/monetoile_01.png" alt=""><span>Monetoile Round<br>CL2801Q_WH</span></a><span></span></li>
+                            <li><a href="/product/monetoile-round-cl2801qwhr/72/category/43/display/1/"><img src="/web/clareo/monetoile_02.png" alt=""><span>Monetoile Round<br>CL2801Q_WHR</span></a></li>
+                            <li><a href="/product/monetoile-round-cl2801qrg/73/category/43/display/1/"><img src="/web/clareo/monetoile_03.png" alt=""><span>Monetoile Round<br>CL2801Q_RG</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide lune_blanche">
+                <div class="contents_box">
+                    <div class="txt_box">
+                        <h2>Lune Blanche</h2>
+                        <span>고요히 떠오르는 밤하늘의 은은한 달빛처럼</span>
+                    </div>
+                    <div class="product_box">
+                        <ul class="product_list">
+                            <li><a href="/product/lune-blanche-round-cl2802wh/77/category/43/display/1/"><img src="/web/clareo/lune_01.png" alt=""><span>Lune Blanche Round<br>CL2802WH</span></a><span></span></li>
+                            <li><a href="/product/lune-blanche-round-cl2802whr/78/category/43/display/1/"><img src="/web/clareo/lune_02.png" alt=""><span>Lune Blanche Round<br>CL2802WHR</span></a></li>
+                            <li><a href="/product/lune-blanche-round-cl2802rg/79/category/43/display/1/"><img src="/web/clareo/lune_03.png" alt=""><span>Lune Blanche Round<br>CL2802RG</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Add Pagination -->
+        <!--div class="swiper-pagination"></div-->
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+
+

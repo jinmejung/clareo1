@@ -1,0 +1,6 @@
+.mid-0.xans-layout-statelogon { float:right;  }
+.mid-0.xans-layout-statelogon a { padding:0 4px 0 10px; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/layout/ico_util1.gif") no-repeat 0 50%; }
+.mid-0.xans-layout-statelogon .myinfo a { background:none; }
+
+/* ·¹ÀÌ¾Æ¿ô Áß¾ÓÇü */
+body.center .mid-0.xans-layout-statelogon { float:right; padding:16px 0 0 0; }

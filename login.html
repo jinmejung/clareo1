@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/module/layout/statelogoff.css">
+    <link rel="stylesheet" href="css/module/layout/statelogon.css">
+    <link rel="stylesheet" href="css/module/layout/searchHeader.css">
+    
+    <link rel="stylesheet" href="css/about.css">
+    
+    <link rel="stylesheet" href="layout/basic/css/common.css">
+    <link rel="stylesheet" href="layout/basic/css/layout.css">
+    
+    <link rel="stylesheet" href="layout/basic/css/ec-base-ui.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-tooltip.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-help.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-product.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-product.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-paginate.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-tab.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-button.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-box.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-desc.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+        
+    <script src="layout/basic/js/basic.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+        #contents{ margin:0 auto !important;}
+        #c_footer{position:absolute!important;}
+        input {border:none;background: none; }
+        input[type="text"], input[type="password"] {border:none; border-bottom:1px solid #ddd; width:300px; height:30px;  font-size: 12px;  font-weight: 300;}
+        .login-wrap {overflow:hidden; position:relative; margin: 150px 0;}
+        .login-box-wrap {border:1px solid #ddd; width:48%; float:left; box-sizing:border-box; margin:1%; padding:20px 0;}
+        .security {text-align:right;}
+        .login-contents {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            height:300px;
+            padding: 70px 0 0;
+            
+        }
+        .login-contents h3{
+            font-family:'Noto Sans KR',sans-serif; 
+            color:#917a6a;
+            font-weight:500;
+            font-size:25px;
+            margin-bottom: 15px;
+        }
+        .login-contents  > p{
+            margin-bottom:15px;
+        }
+        .guest-order-input {
+            display:inline-block;
+            text-align:left;
+        }
+
+        .btn-box {width:315px; margin:20px auto; overflow:hidden;}
+        .btn-box a {width:50%; float:left; box-sizing:border-box; text-align:center; border:1px solid #ddd; padding: 14px 0 10px; display:block; font-size: 13px; transition:all .4s ease;}
+        .btn-box a:hover{background-color:#917a6a; color:#fff; border-color:#917a6a;}
+        .btn-box a:hover input{color:#fff;}
+        .btn-box >a:first-of-type {margin-right:-1px}
+
+        .btn-box a.a-none {padding: 0;}
+        .non-member-button { padding: 14px 0 10px; width:100%;}
+
+    </style>
+    
+</head>
+<body>
+       <header>    
+            <div class="top_menu">
+                <div module="Layout_statelogoff" class="txtBase mid-0 xans-layout-statelogoff">
+                    <a href="login.html" class="log">LOGIN</a>
+                    <a href="#">JOIN</a>
+                    <div id="r_search"><a href="#none">SEARCH</a></div>
+                </div>
+
+                <!--오른쪽 상단 검색창-->
+                <div class="search_header" module="Layout_SearchHeader" >
+                    <fieldset>
+                        <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="검색어를 입력하세요." onmousedown="SEARCH_BANNER.clickSearchForm(this)"  type="text" style="height:24px;">
+                        <a href="#none" onclick="{$action_search_submit}" ><i class="fa fa-search" style="font-size:18px;"></i></a></fieldset>
+                </div>
+            </div>
+
+            <div class="logo_wrap">
+                <a href="index.html" style="display:block;"><img src="clareo/img/clareo_logo.png" /></a>
+            </div>
+            <div class="category">
+                <ul class="menu_wrap depth1">
+                    <li>
+                        <a class="a" href="about.html">ABOUT</a>
+                        <!--ul class="depth2">
+                            <li><a class="down" href="/brandstory.html">Brand Story</a></li>
+                            <li><a class="down" href="/contact.html">Contact</a></li>
+                        </ul-->
+                    </li>
+                    <li>
+                        <a class="a" href="contact.html">CONTACT</a>
+                        <!--ul class="depth2">
+                            <li>
+                            <a class="down" href="/watch/list.html?cate_no=52">Watch</a>
+                            <ul class="depth3">
+                            <li><a class="down" href="/watch/list.html?cate_no=29">Men</a></li>
+                            <li><a class="down" href="/watch/list.html?cate_no=30">Women</a></li>
+                            <li><a class="down" href="/watch/list.html?cate_no=31">Couple</a></li>
+                            <li><a class="down" href="/watch/list.html?cate_no=49">Sale</a></li>
+                            </ul>
+                            </li>
+                            <li><a class="down" href="/jewerly/list.html?cate_no=53">Jewerly</a>
+                            <ul class="depth3">
+                            <li><a class="down" href="/jewerly/list.html?cate_no=54">Necklace</a></li>
+                            <li><a class="down" href="/jewerly/list.html?cate_no=55">Bracelet</a></li>
+                            <li><a class="down" href="/jewerly/list.html?cate_no=56">Earring</a></li>
+                            </ul>
+                            </li>
+                            <li><a class="down" href="/product/list.html?cate_no=57">Hair Acc</a></li>
+                         </ul-->
+                    </li>
+                    <li>
+                        <a class="a" href="collection.html">COLLECTION</a>
+                    </li>
+                    <li>
+                        <a class="a" href="shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a class="a" href="#">COMMUNITY</a>
+                        <ul class="depth2">
+                            <li><a class="down" href="https://www.instagram.com/clareo_official/"  target="_blank">Instagram</a></li>
+                            <li><a class="down" href="https://www.facebook.com/%ED%81%B4%EB%9D%BC%EB%A0%88%EC%98%A4-1759348630768136/?modal=admin_todo_tour" target="_blank">Facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+   </header>
+   <div id="wrap">
+        <div id="container">
+            <div id="contents">
+                    <div class="login-wrap">
+                        <div module="member_login" class="login-box-wrap" >
+                            
+                            <!--
+                            $defaultReturnUrl = /index.html
+                            $forbidIpUrl = member/adminFail.html
+                            -->
+                            <div class="login-contents">
+                                <h3>CLAREO LOGIN</h3>
+
+                                
+                                <ul>
+                                    <li><input id="member_id" name="member_id" fw-filter="isFill" fw-label="아이디" fw-msg="" class="inputTypeText" placeholder="ID" value="" type="text"></li>
+                                    <li><input id="member_passwd" name="member_passwd" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="패스워드" fw-msg="" value="" type="password" placeholder="PASSWORD"></li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a href="#" onclick="{$action_func_login}" class="loginbutton">LOGIN</a>
+                                    <a href="#" class="loginbutton join">JOIN</a>
+                                </div>
+
+                                <div class="find-box">
+                                    <a href="#">FORGOT ID</a> / 
+                                    <a href="#">FORGOT PASSWORD</a>
+                                </div>
+                            </div>
+                        </div>
+                        <form id="historyNoLoginForm" name="" action="/exec/front/MyShop/OrderHistoryLogin/" method="POST" enctype="multipart/form-data">
+                            <input id="order_detail_url" name="order_detail_url" value="/myshop/order/detail.html" type="hidden">
+                            <div class="login-box-wrap xans-element- xans-myshop xans-myshop-orderhistorynologin">
+                                <!--@css(/css/module/myshop/orderHistoryNologin.css)-->
+                                <!--
+                                $orderDetailUrl = /myshop/order/detail.html
+                                -->
+                                <div class="login-contents">
+                                    <h3>GUEST ORDER</h3>
+                                    <p>주문시의 주문번호로 주문조회가 가능합니다.</p>
+                                    <ul class="guest-order-input">
+                                        <li><input id="order_name" name="order_name" fw-filter="isFill" fw-label="주문자명" fw-msg="" class="inputTypeText" placeholder="NAME" value="" type="text"></li>
+                                        <li class="number">
+                                            <input id="order_id1" name="order_id1" maxlength="8" fw-filter="isOrderid&amp;isFill" fw-label="주문번호" fw-msg="" value="" type="text" placeholder="ORDER NUMBER" style="width: 139px;">
+                                            -<input id="order_id2" name="order_id2" maxlength="10" fw-filter="isOrderid&amp;isFill" fw-label="주문번호" fw-msg="" value="" type="text" style="width: 138px;">
+                                        </li>
+                                        <li>
+                                            <input id="order_password" name="order_password" fw-filter="isFill" fw-label="비회원주문 비밀번호" fw-msg="" value="" type="password" placeholder="ORDER PASSWORD">
+                                        </li>
+                                    </ul>                
+                                    <div class="btn-box">
+                                        <a href="#" class="a-none"><input type="submit" value="CHECK" alt="Check"  class="non-member-button" style="cursor:pointer;"></a>
+                                        <p class="link {$display_nomember|display}" id="noMemberWrap">
+                                            <a href="#" onclick="{$action_nomember_order}" >비회원 구매</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="c_footer">
+            <div class="footer-inner">
+                <ul class="information information_w">
+                    <li><a href="/clareo/about.html">회사소개</a></li>
+                    <li><a href="/member/agreement.html">이용약관</a></li>
+                    <li><a href="/member/privacy.html"><strong>개인정보처리방침</strong></a>
+                    </li>
+                    <li>법인명 : (주)트랜드메카</li>
+                    <li>대표자 : 서대규 </li>
+                    <li>통신판매업 신고 : 2016-서울강남02846호</li>
+                    <li>(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</li>
+                    <li>사업자 등록번호 안내 : 113-86-48435 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li> 2018 trendmecca</li>
+                </ul>
+            </div>
+    </footer>  
+</body>
+</html>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/scrollreveal.js"></script>
+<script type="text/javascript">
+    window.jQuery1_12_4 = jQuery.noConflict(true);
+    jQuery1_12_4(function($) {
+        var jQuery = $;
+        
+         $(".search_header").css('display','none')
+            $("#r_search a").click(function(){
+                $(".search_header").toggle();
+            });
+       
+    }(jQuery1_12_4));
+
+</script>
+ 
+
+
+
