@@ -142,27 +142,12 @@
 </body>
 </html>
 <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="js/scrollreveal.js"></script>
 <script>
     $(document).ready(function(){
          $(".search_header").css('display','none')
             $("#r_search a").click(function(){
                 $(".search_header").toggle();
             });
-        
-        window.sr = ScrollReveal();
-        sr.reveal('.ko_img',{
-            origin: 'bottom',
-            delay:200,
-            duration: 800,
-            scale: 0
-        });
-        sr.reveal('.ko_txt_box',{
-            origin: 'bottom',
-            delay:200,
-            duration: 1000,
-            scale: 0
-        });
         
          $(document).scroll(function(){
             var position_y = $(document).scrollTop();
