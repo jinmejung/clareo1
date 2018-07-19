@@ -2,23 +2,19 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>about</title>
+    <title>blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
     <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
     
     <link rel="stylesheet" href="css/module/layout/statelogoff.css">
-    <link rel="stylesheet" href="css/module/layout/statelogon.css">
     <link rel="stylesheet" href="css/module/layout/searchHeader.css">
-    
-    <link rel="stylesheet" href="css/about.css">
     
     <link rel="stylesheet" href="layout/basic/css/common.css">
     <link rel="stylesheet" href="layout/basic/css/layout.css">
-    
     <link rel="stylesheet" href="layout/basic/css/ec-base-ui.css">
     <link rel="stylesheet" href="layout/basic/css/ec-base-tooltip.css">
     <link rel="stylesheet" href="layout/basic/css/ec-base-help.css">
@@ -29,6 +25,8 @@
     <link rel="stylesheet" href="layout/basic/css/ec-base-button.css">
     <link rel="stylesheet" href="layout/basic/css/ec-base-box.css">
     <link rel="stylesheet" href="layout/basic/css/ec-base-desc.css">
+    
+    <link rel="stylesheet" href="css/blog.css">
     
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
     <script src="js/common.js"></script>
@@ -102,22 +100,47 @@
                 </ul>
             </div>
    </header>
-   <div id="about_wrap">
-        <div class="about_en">
-            <div class="en_txt_box">
-                <h2>Shine your life. <br> Twinkle your life.</h2>
-                <p>
-                    우연히 바라본 밤 하늘에 떠있는 달, 그리고 별. <br>
-                    <br>
-                    어두운 밤 당신을 비춰주는 소중한 작은 별빛처럼<br>
-                    고요히 떠오르는 밤하늘의 은은한 달빛처럼 <br>
-                    <br>
-                    클라레오는 언제 어디서든 당신의 아름다움을 비춰줄게요.
-                </p>
+    <div id="wrap">
+        <div id="container">
+            <div id="contents">
+                    <div class="Sub_title" id="post_blog">
+                        <h2>Blog</h2>
+                    </div>
+                    <div style="width:100%; margin:0 auto;">
+                        <a href="#"><img style="width:100%;" src="clareo/img/blog_top_banner.jpg" alt="" /></a>
+                    </div>
+                    <div id="month_16_10" style="height:1px;"></div>
+                    <ul class="blog_menu">
+                        <li class="_m blog_menu_on">2018 S/S</li>
+                        <!--li class="_m">2018 F/W</li>
+                        <li class="_m">2016 F/W</li-->
+                    </ul>
+                    <div class="post_blog">
+                        <h2 class="title">Recommend Posting</h2>
+                        <div class="blog_contents blog_contents1">
+                           <!-- 2018 S/S -->
+                           <!--div class="blog_content">
+                                  <a href="https://blog.naver.com/wather3548/221299118773" target="_blank">
+                                       <div class="blog_img"><img src="/web/makalu/blog_top_banner.jpg" alt=""></div>
+                                       <span class="blog_text">
+                                         <h2>Blogger :<b>응지의하루</b></h2>
+                                         <span class="content">여자 손목시계 추천 깔끔해서 딱 좋은뎅?</span>
+                                         <span class="date">2018 in Korea</span>
+                                     </span>
+                                   </a>
+                               </div-->
+                        </div>
+                        <!--div class="blog_contents blog_contents2">
+                        </div>
+                        <div class="blog_contents blog_contents3">
+
+                        </div-->
+                    </div>
+                        <div class="blog_submit"><a href="#">블로그 서포터즈 신청</a></div>
             </div>
-            <div class="en_img"><img src="clareo/img/about_jewelry.png" alt=""></div>
         </div>
-    </div>
+     </div>
+
     <footer id="c_footer">
             <div class="footer-inner">
                 <ul class="information information_w">
@@ -143,11 +166,12 @@
 </html>
 <script>
     $(function(){
+        /* 검색창 */
          $(".search_header").css('display','none');
             $("#r_search a").click(function(){
                 $(".search_header").toggle();
             });
-        
+        /* 탑버튼 */
          $(document).scroll(function(){
             var position_y = $(document).scrollTop();
 
@@ -157,6 +181,19 @@
             if (position_y < 290){
                 $('#btntop').fadeOut(300);
             }
+        });
+        /* 블로그페이지 */
+        function a(index) {
+            $('.post_blog .blog_contents').hide();
+            $('.post_blog .blog_contents' + index).fadeIn(800);
+        }
+
+        a("1");
+
+        var li = $('.blog_menu > ._m').click(function() {
+            var $this = $(this);
+
+            a(li.index($this) + 1);
         });
     });
 
