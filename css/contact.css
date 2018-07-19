@@ -1,0 +1,13 @@
+        .contact {}
+        .contact h2 { font-size: 40px; color: #917a6a; text-transform: uppercase; margin-bottom:30px; font-weight: 600; text-align:center; font-family:'Noto Sans KR',sans-serif; animation:mtxt 1s;}
+        .address {background:#e3ddd8; width:100%; display:inline-block; font-family:'Noto Sans KR', sans-serif; }
+        .address dl {text-align:center; padding:20px 0; border-bottom:1pxs solid #ddd; color:#333; animation:mtxt 1.4s;}
+        .address dl:last-child {border-right:0;}
+        .address dl dt {font-size:14px; font-weight:bold; color:#333;}
+        .address dd {font-size:13px;}
+        .address a {display:block; margin:20px auto 50px;; text-align:center; background:#917a6a; color:#fff; width:200px; padding:10px 0; border-radius:5px;animation:mtxt 1.4s;} 
+        .address a:hover {filter:alpha(opacity=7);opacity:.7;  transition:0.4s ease;}
+        @keyframes mtxt {
+                0% {transform:translateY(50px); opacity:0;}
+                100% {transform:translateY(0); opacity:1;}
+            }

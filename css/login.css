@@ -1,0 +1,38 @@
+        #contents{ margin:0 auto !important;}
+        #c_footer{position:absolute!important;}
+        input {border:none;background: none; }
+        input[type="text"], input[type="password"] {border:none; border-bottom:1px solid #ddd; width:300px; height:30px;  font-size: 12px;  font-weight: 300;}
+        .login-wrap {overflow:hidden; position:relative; margin: 150px 0;}
+        .login-box-wrap {border:1px solid #ddd; width:48%; float:left; box-sizing:border-box; margin:1%; padding:20px 0;}
+        .security {text-align:right;}
+        .login-contents {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            height:300px;
+            padding: 70px 0 0;
+            
+        }
+        .login-contents h3{
+            font-family:'Noto Sans KR',sans-serif; 
+            color:#917a6a;
+            font-weight:500;
+            font-size:25px;
+            margin-bottom: 15px;
+        }
+        .login-contents  > p{
+            margin-bottom:15px;
+        }
+        .guest-order-input {
+            display:inline-block;
+            text-align:left;
+        }
+
+        .btn-box {width:315px; margin:20px auto; overflow:hidden;}
+        .btn-box a {width:50%; float:left; box-sizing:border-box; text-align:center; border:1px solid #ddd; padding: 14px 0 10px; display:block; font-size: 13px; transition:all .4s ease;}
+        .btn-box a:hover{background-color:#917a6a; color:#fff; border-color:#917a6a;}
+        .btn-box a:hover input{color:#fff;}
+        .btn-box >a:first-of-type {margin-right:-1px}
+
+        .btn-box a.a-none {padding: 0;}
+        .non-member-button { padding: 14px 0 10px; width:100%;}
